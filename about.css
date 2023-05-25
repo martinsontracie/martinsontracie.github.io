@@ -1,0 +1,332 @@
+@font-face {
+	font-family:"Josefin Sans";
+	src: url("Josefin-Sans") format('ttf');
+}
+
+body {
+	background-color: #eeeeee;
+}
+h1.tracie {
+	text-align: center;
+	color: purple;
+	font-family:"Josefin Sans";
+}
+h2.welcome {
+	font-family: georgia;
+	text-align: center;
+	font-size: 1em;
+	color: purple;
+}
+h3.quote {
+	font-family: serif;
+	text-align: center;
+	font-size: 1em;
+	color:purple;
+}
+h2.info, h2.me, h2.reason, h2.learn {
+	font-family:"Josefin Sans";
+	margin: 1em;
+	color: purple;
+}
+h2.learn {
+	text-align: center;
+	margin: 1em 1em 0 1em;
+}
+p.interest {
+	font-weight: bold;
+	font-size: 0.95em;
+	color: purple;
+}
+ul.square {
+	list-style-type: square;
+}
+ul.none {
+	list-style: none;
+}
+li.space {
+	margin: 0 auto;
+	padding: 0.5em 0.5em;
+}
+nav.nav {
+	list-style: none;
+	font-size: 0.85em;
+	font-family:"Josefin Sans";
+	text-align: center;
+	display: inline;
+}
+ul.social {
+	list-style: none;
+	font-size: 0.9em;
+	font-family: georgia;
+	text-align: center;
+	display: inline;
+	margin: 1em;
+}
+dd.no {
+	display: none;
+}
+p.about, p.interest {
+	margin: 1.5em;
+	font-family:"Josefin Sans";
+}
+h2.info {
+	text-align: center;
+	font-family:"Josefin Sans";
+	font-size: 1em;
+}
+p.about_bold {
+	margin: 1.5em;
+	font-weight: bold;
+	color: purple;
+}
+h2.exp {
+	text-align: center;
+	font-family:"Josefin Sans";
+	font-size: 1em;
+	color: purple;
+}
+h3.skill {
+	font-size: 0.9em;
+	font-style: italic;
+	padding: 0 3rem 0 1rem;
+}
+dt.head {
+	font-weight: bold;
+}
+dl.bullets {
+	padding: 0 3rem 0 1rem;
+}
+hr.line {
+	color: #000000;
+}
+h2.examples, h3.examples {
+	text-align: center;
+}
+p.info {
+	text-align: center;
+	margin: 1em;
+	padding: 1em;
+}
+@media screen and (min-width: 500px) {
+	div.home {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: 50px 50x 50px 50px 50px;
+		grid-template-areas:
+			"name"
+			"introduction "
+			"point"
+			"contact"
+			"learn";
+		margin: 0.25in 0.5in;
+	}
+	div.name {
+		grid-area: name;
+		border: 0.25px solid #000000;
+		background-color:#d9d2e9;
+	}
+	div.contact {
+		grid-area: contact;
+		border: 0.25px solid #000000;
+		background-color: #d9d2e9;
+	}
+	div.introduction {
+		grid-area: introduction;
+		border: 0.25px solid #000000;
+		background-color: #d9d2e9;
+	}
+	div.point {
+		grid-area: point;
+		border: 0.25px solid #000000;
+		background-color: #d9d2e9;
+	}
+	div.learn {
+		grid-area: learn;
+		border: 0.25px solid #000000;
+		background-color: #d9d2e9;
+	}
+	img {
+		width: 150px;
+		height: auto;
+		float: right;
+		shape-outside: circle;
+		margin: 0.85em;
+	}
+}
+@media screen and (min-width: 1000px) {
+	div.home {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: 225px auto auto auto;
+		grid-template-areas:
+			"name name"
+			"contact introduction "
+			"point introduction"
+			"learn learn";
+		margin: 0.5in 1in;
+	}
+	div.name {
+		grid-area: name;
+		background-color:#d9d2e9;;
+	}
+	div.contact {
+		grid-area: contact;
+		background-color: #d9d2e9;
+	}
+	div.introduction {
+		grid-area: introduction;
+		background-color: #d9d2e9;;
+	}
+	div.point {
+		grid-area: point;
+		background-color: #d9d2e9;;
+	}
+	div.learn {
+		grid-area: learn;
+		background-color: #d9d2e9;
+	}
+	img {
+		width: 200px;
+		height: auto;
+		float: right;
+		shape-outside: circle;
+		margin: 1em;
+	}
+}
+@media screen and (min-width: 500px) {
+	div.resume {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: 225px auto auto auto auto;
+		grid-template-areas:
+			"name"
+			"communication"
+			"leadership"
+			"skills"
+			"education";
+		margin: 0.5in 0.5in;
+	}
+	div.name {
+		grid-area: name;
+		background-color:#d9d2e9;;
+	}
+	div.communication {
+		grid-area: communication;
+		background-color: #d9d2e9;
+		border: 1px solid #000000;
+	}
+	div.leadership {
+		grid-area: leadership;
+		background-color: #d9d2e9;
+		border: 1px solid #000000;
+	}
+	div.skills {
+		grid-area: skills;
+		background-color: #d9d2e9;
+		border: 1px solid #000000;
+	}
+	div.education {
+		grid-area: education;
+		background-color: #d9d2e9;
+		border: 1px solid #000000;
+	}
+}
+@media screen and (min-width: 1000px) {
+	div.resume {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-template-rows: 200px auto auto auto;
+		grid-template-areas:
+			"name name name"
+			"communication communication education"
+			"communication communication skills"
+			"leadership leadership skills";
+		margin: 0.5in 0.5in;
+	}
+	div.name {
+		grid-area: name;
+		background-color:#d9d2e9;;
+	}
+	div.communication {
+		grid-area: communication;
+		background-color: #d9d2e9;
+		border: 1px solid #000000;
+	}
+	div.education {
+		grid-area: education;
+		background-color: #d9d2e9;
+		border: 1px solid #000000;
+      	padding: 0 3rem 0 1rem
+	}
+	div.leadership {
+		grid-area: leadership;
+		background-color: #d9d2e9;
+		border: 1px solid #000000;
+	}
+	div.skills {
+		grid-area: skills;
+		background-color: #d9d2e9;
+		border: 1px solid #000000;
+		padding: 0 5rem 0 1rem;
+	}
+}
+@media screen and (min-width: 500px) {
+	div.projects {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: 250px auto;
+		grid-template-areas:
+			"name"
+			"list"
+			"orgprojects" 
+			"references";
+		}
+	div.name {
+		grid-area: name;
+		background-color:#d9d2e9;;
+	}
+	div.list {
+		grid-area: list;
+		background-color: #d9d2e9;
+	}
+	div.orgprojects {
+		grid-area: orgprojects;
+		background-color: #d9d2e9;
+	}
+	div.references {
+		grid-area: references;
+		background-color: #d9d2e9;
+	}
+}
+@media screen and (min-width: 1000px) {
+	div.projects {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: 225px auto auto;
+		grid-template-areas:
+			"name name"
+			"list list"
+			"orgprojects references";
+		}
+	div.name {
+		grid-area: name;
+		background-color:#d9d2e9;;
+	}
+	div.list {
+		grid-area: list;
+		background-color: #d9d2e9;
+	}
+	div.orgprojects {
+		grid-area: orgprojects;
+		background-color: #d9d2e9;
+	}
+	div.references {
+		grid-area: references;
+		background-color: #d9d2e9;
+	}
+	img {
+		width: 150px;
+		height: auto;
+		margin: 1em;
+	}
+}

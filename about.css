@@ -49,17 +49,17 @@ li.space {
 }
 nav.nav {
 	list-style: none;
-	font-size: 0.85em;
+	font-size: 0.9em;
 	font-family:"Josefin Sans";
 	text-align: center;
-	display: inline;
+	display: inline-flex;
 }
 ul.social {
 	list-style: none;
 	font-size: 0.9em;
 	font-family: georgia;
 	text-align: center;
-	display: inline;
+	display: inline-flex;
 	margin: 1em;
 }
 dd.no {
